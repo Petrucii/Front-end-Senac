@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 05</title>
+</head>
+<body>
+    <script>
+        /*
+Condicional else if
+Sintaxe:
+ 
+ 
+if (condição1) {
+   bloco de código a ser executado se condição1 for verdadeira
+ 
+} else if (condição2) {
+   bloco de código a ser executado se condição1 for falsa e condição2 for verdadeira
+ 
+} else {
+   bloco de código a ser executado se todas as condições anteriores forem falsas
+}
+ 
+*/
+ 
+// Exemplo-05:
+// Crie um programa que leia a nota de um aluno e exiba a mensagem correspondente à faixa de notas.
+
+    let nota = parseFloat(prompt('Digite a nota'));
+
+    if (nota >= 90) {
+        console.log('Nota A');
+    } 
+    else if (nota >= 80) {
+        console.log('Nota B');
+    }
+    else if (nota >= 70) {
+        console.log('Nota C');
+    }
+    else {
+        console.log('Nota D')
+    }
+
+    </script>
+</body>
+</html>
+
+ 

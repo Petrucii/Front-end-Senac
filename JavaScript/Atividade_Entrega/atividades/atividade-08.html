@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 08</title>
+</head>
+<body>
+    <script>
+        let numero01 = parseFloat(prompt('Digite o 1° valor'));
+        let numero02 = parseFloat(prompt('Digite o 2° valor'));
+        let operacao = prompt('Digite a operador');
+        let resultado = 0
+
+        document.write('Calculadora Simples' + '<br>');
+        document.write('1° Valor: ' + numero01 + '<br>');
+        document.write('2° Valor: ' + numero02 + '<br>');
+        // document.write(operacao );
+
+        switch (operacao) {
+            case '+':
+            document.write('Soma: ' + (numero01 + numero02))
+            break;
+            case '-':
+            document.write('Subtração: ' + (numero01 - numero02))
+            break;
+            case '*':
+            document.write('Multiplicação: ' + (numero01 * numero02))
+            break;
+            case '/':
+            document.write('Divisão: ' + (numero01 + numero02))
+            break;
+            
+        }
+
+    </script>
+</body>
+</html>

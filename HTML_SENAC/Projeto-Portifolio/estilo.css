@@ -1,0 +1,70 @@
+body {
+    background-color: black;
+}
+
+header a {
+    color: white;
+    margin: 14%;
+    text-decoration: none;
+}
+header a:hover {
+    color: aqua;
+}
+
+.center{
+    text-align: center;
+    margin-top: 150px;
+}
+img {
+    width: 300px;
+    border-radius: 100%;
+    border-color: rgb(129, 59, 13);
+    border-style: solid;
+}
+h1{
+    color: white;
+    margin-left: 50px;
+}
+main {
+    background-color: beige;
+        width: 95%;
+        padding: 10px;
+        height: 700px;
+        margin: 0 auto;
+        border-radius: 50px;
+        text-align: center;
+    }
+.Profissão {
+    background-color: rgb(128, 128, 111);
+    border-radius: 30px;
+    width: 100%;
+    margin-top: 90px;
+    padding-top: 2px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+.Sobre {
+    background-color: rgb(128, 128, 111);
+    border-radius: 30px;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 2px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+section{
+    margin-top: 5px;
+    display: block;
+}
+.Formação {
+    background-color: rgb(128, 128, 111);
+    border-radius: 30px;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 2px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    text-align: center;
+}

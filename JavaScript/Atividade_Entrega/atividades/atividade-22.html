@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 30</title>
+</head>
+<body>
+    <div>
+        <img id="img" src="lampadas/desligadaa.png" alt="Lâmpada desligada">
+        
+    </div>
+    <script>
+        
+        function desligar(){
+             let imgD = document.getElementById('img');
+             imgD.src = 'lampadas/desligadaa.png'
+        };
+
+        function ligar(){
+           let imgL = document.getElementById('img');
+           imgL.src = 'lampadas/ligada.png'
+        };
+    
+
+    </script>
+
+    <form action="">
+        <input type="radio" onclick="ligar();" name="função"> Ligar <br>
+        <input type="radio" onclick="desligar();" name="função" checked> Desligar
+
+    </form>
+</body>
+</html>

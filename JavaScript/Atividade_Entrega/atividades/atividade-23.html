@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 23</title>
+</head>
+<body>
+    <style>
+        #container{
+            margin: 0 auto;
+            margin-top: 100px;
+            width: 700px;
+            height: 300px;
+            border-radius: 10px ;
+            box-shadow: 2px 2px 20px black;
+        }
+
+        #button{
+            margin: 0 auto;
+            margin-top: 100px;
+            margin-left: 300px;
+            width: 200px;
+            height: 70px;
+            border-radius: 10px;
+            background-color: #7878d4;
+            border: solid black 2px;
+            text-align: center;
+            font-size: 25px;
+            line-height: 70px;
+            font-family: "Dancing Script";
+
+        }
+
+        #button:hover{
+            background-color: #5959be;
+        }
+       
+        
+
+    </style>
+
+
+
+
+    <div id="container"></div>
+    <div>
+        <button  id="button" onclick="acao();">Alterar Novamente</button>
+    </div>
+    <script>
+        function acao(){
+            let cor = prompt('Digite uma cor!');
+            let container = document.getElementById('container');
+            container.style.backgroundColor = cor;
+
+        }
+
+        acao();
+
+    </script>
+
+</body>
+</html>

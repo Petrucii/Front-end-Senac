@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100%;
+        }
+        div#container {
+            background-color: #e9e8e8fd;
+            width: 400px;
+            height: 400px;
+            display: block;
+            margin: auto;
+            margin-top: 200px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 0 40px 19px #696969;
+
+        }
+
+        .box {
+            display: flex;
+        }
+
+        div.port {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fc7303;
+            width: 200px;
+            border-radius: 15px;
+            margin-top: 10px;
+            border: solid 1px black ;
+            color: white;
+            font-weight: bolder;
+
+        }
+
+        div.ing {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fc7303;
+            width: 200px;
+            border-radius: 15px;
+            margin-top: 10px;
+            border: solid 1px black;
+            color: white;
+            font-weight: bolder;
+        }
+
+        div img {
+            width: 250px;
+            height: 250px;
+            margin-top: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 8px 6px #6e6e6e;
+        }
+            
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <div id="container">
+            <div class="box">
+                <div class="port">
+                    <h3 id="port"></h3>
+                </div>
+                <div class="ing">
+                    <h3 id="ing"></h3>
+                </div>
+            </div>
+            <div><img id="img" src="" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+       let nome = prompt('Digite o nome de uma fruta!');
+       let displayPort = document.getElementById('port');
+       let displayIng = document.getElementById('ing');
+       let displayImg = document.getElementById('img');
+
+        switch (nome) {
+            case 'abacaxi':
+                displayPort.textContent = 'Abacaxi'
+                displayIng.textContent = 'Pineapple' 
+                displayImg.src = 'frutas/abacaxi.jpg'
+                break;
+            case 'banana':
+                displayPort.textContent = 'Banana'
+                displayIng.textContent = 'Banana' 
+                displayImg.src = 'frutas/banana.jpg'
+                break;
+            case 'caixa':
+                displayPort.textContent = 'Caixa'
+                displayIng.textContent = 'Box' 
+                displayImg.src = 'frutas/caixa.jpg'
+                break;
+            case 'caqui':
+                displayPort.textContent = 'Caqui'
+                displayIng.textContent = 'Khaki' 
+                displayImg.src = 'frutas/caqui.jpg'
+                break;
+            case 'coco':
+                displayPort.textContent = 'Coco'
+                displayIng.textContent = 'Coconut' 
+                displayImg.src = 'frutas/coco.jpg'
+                break;
+            case 'mamao':
+                displayPort.textContent = 'Mamão'
+                displayIng.textContent = 'Papaya' 
+                displayImg.src = 'frutas/mamao.jpg'
+                break;
+            case 'manga':
+                displayPort.textContent = 'Manga'
+                displayIng.textContent = 'Mango' 
+                displayImg.src = 'frutas/manga.jpg'
+                break;
+            case 'melancia':
+                displayPort.textContent = 'Melancia'
+                displayIng.textContent = 'Watermelon' 
+                displayImg.src = 'frutas/melancia.png'
+                break;
+            case 'melao':
+                displayPort.textContent = 'Melão'
+                displayIng.textContent = 'Melon' 
+                displayImg.src = 'frutas/melao.jpg'
+                break;
+            case 'morango':
+                displayPort.textContent = 'Morango'
+                displayIng.textContent = 'Strawberry' 
+                displayImg.src = 'frutas/morango.png'
+                break;
+            case 'pera':
+                displayPort.textContent = 'Pêra'
+                displayIng.textContent = 'Pear' 
+                displayImg.src = 'frutas/pera.jpg'
+                break;
+            case 'tangerina':
+                displayPort.textContent = 'Tangerina'
+                displayIng.textContent = 'Tangerine' 
+                displayImg.src = 'frutas/tangerina.jpg'
+                break;
+            case 'uva':
+                displayPort.textContent = 'Uva'
+                displayIng.textContent = 'Grape' 
+                displayImg.src = 'frutas/uva.jpg'
+                break;
+        }
+
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 25</title>
+</head>
+
+<body onkeypress="g(event)" onkeydown="esc(event)" onkeyup="space(event)">
+    <div></div>
+    <script>
+
+        // let tecla = prompt('Escolha entre as teclas: Esc, Space ou Enter.');
+        alert('Escolha uma tecla entre Esc, g ou Space: ')
+
+        function esc(event) {
+            if (event.key === 'Escape') {
+                alert('Você apertou a tecla Esc!')
+                document.write('Tecla Esc acionada!');
+            }
+        }
+
+        function g(event) {
+
+            if (event.key === 'g') {
+                alert('Você apertou a tecla g!')
+                document.write('Tecla g acionada!')
+                console.log(event.key);
+            }
+        }
+        function space(event) {
+
+            if (event.key === ' ') {
+                alert('Você apertou a tecla Space!')
+                document.write('Tecla Space acionada!')
+                console.log(event.key);
+            }
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>

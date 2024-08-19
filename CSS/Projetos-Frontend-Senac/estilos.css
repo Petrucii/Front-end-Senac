@@ -1,0 +1,122 @@
+body {
+    background-color: black;
+}
+
+main {
+    position: absolute;
+    margin: auto;
+    top: -310px;
+    right: -215px;
+    
+}
+
+#Fundo {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 700px;
+    /* background-image: url('imagens/Fundo\ netflix.jpg'); */
+
+}
+#imgfundo {
+    /* position: absolute;
+    margin: auto;
+    top: -310px;
+    right: -215px; */
+}
+
+#centro {
+    margin: 280px;
+    text-align: center;
+    
+}
+#centro h1 {
+    background-color: none;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif; 
+
+}
+
+#centro p.centro {
+    font-size: 25px;
+    line-height: 2px;
+
+}
+#centro p {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+    
+}
+
+.inputemail {
+   background-color: rgba(0, 0, 0, 0.5);
+   color: grey;
+   width: 394px;
+   height: 56px;
+   border-radius: 5px;
+   font-size: 15px;
+   padding-left: 10px;
+   border: gray solid 1px;
+
+}
+
+.inputbutton{
+    background-color: red;
+    color: white;
+    width: 184px;
+    height: 56px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 25px;
+    border-style: none;
+    
+}
+
+.inputentrar {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+    width: 70px;
+    height: 33px;
+    position: absolute;
+    top: 20px;
+    right: 170px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+    
+.imglogo {
+    width: 190px;
+    position: absolute;
+    left: 150px;
+}
+
+select {
+    width: 154px;
+    height: 32px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    position: absolute;
+    right: 260px;
+    top: 20px;
+}
+
+.logoidioma {
+    color: white;
+    position: absolute;
+    right: 385px;
+    top: 28px;
+}
+    

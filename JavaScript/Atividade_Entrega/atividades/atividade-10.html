@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 10</title>
+</head>
+<body>
+    <script>
+        let paes = parseInt(prompt("deseja quantos pães?"));
+ 
+        let precoPorPao;
+        let mensagemPromocao;
+ 
+        if (paes >= 15) {
+            precoPorPao = 0.80;
+            mensagemPromocao = console.log("Você entrou na promoção!");
+            document.write("<table border = 2px><tr><td text-align= centere> Padaria Sr.Joaquim </td></tr>");
+            document.write("<tr><td> Quantidade de pães:</td> <td>" + paes + "</td></tr>");
+            document.write("<tr><td> Promoção da padaria:</td><td> Aplica desconto </td></tr>");
+            document.write("<tr><td> Valor unitário </td><td> R$0,80 </td></tr>");
+            document.write("<tr><td> Valor à pagar: </td><td> " + paes * precoPorPao + " </td></tr></table>");
+ 
+        } else {
+            precoPorPao = 1.00;
+            mensagemPromocao = console.log("Você não entrou na promoção.");
+            document.write("<table border = 2px><tr><td text-align= center> Padaria Sr.Joaquim </td></tr>");
+            document.write("<tr><td> Quantidade de pães:</td> <td>" + paes + "</td></tr>");
+            document.write("<tr><td> Promoção da padaria:</td><td> Fora do critério </td></tr>");
+            document.write("<tr><td> Valor unitário </td><td> R$1,00 </td></tr>");
+            document.write("<tr><td> Valor à pagar: </td><td> " + paes  + " </td></tr></table>");
+        }
+ 
+        valorTotal = paes * precoPorPao;
+        console.log(valorTotal);
+ 
+    </script>
+</body>
+</html>

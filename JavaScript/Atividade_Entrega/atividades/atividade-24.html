@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 24</title>
+</head>
+<body id="container">
+    <style>
+        #container{
+            text-align: center;
+        }
+        #box{
+            width: 150px;
+            height: 180px;
+            margin-right: 700px;
+            visibility: hidden;
+        }
+        #button{
+            width: 300px;
+            height: 100px;
+            margin: 0 auto;
+            margin-top: 100px;
+            text-align: center;
+            line-height: 100px;
+            border: solid black;
+            border-radius: 10px;
+            background-color: rgb(31, 202, 145);
+            font-size: 35px;
+            color: white;
+        }
+        #button:hover{
+            background-color: rgb(25, 114, 84);
+        }
+    </style>
+    <div>
+        <img id="box" src="" alt="">
+    </div>
+    <button id="button" onclick="acao();" ondblclick="acao2();" onmouseover="acao3();" onmouseout="acao4();" onmouseup="acao5();">?</button>
+    <script>
+        function acao(){
+            let onCk = document.getElementById('container');
+            container.style.backgroundColor = 'black';
+        }
+
+        function acao2(){
+            let onDb = document.getElementById('container');
+            container.style.backgroundColor = 'white';
+        }
+
+        function acao3(){
+            let onMover = document.getElementById('box');
+            onMover.src = 'img/oi-bob.jfif';
+            onMover.style.visibility = 'visible';
+        }
+
+        function acao4(){
+            let onMout = document.getElementById('box');
+            onMout.style.visibility = 'hidden'
+            let onMup = document.getElementById('container2');
+            onMup.style.visibility = 'hidden'
+
+        }
+
+        function acao5(){
+            let onMup = document.getElementById('container2');
+            onMup.src = 'img/Good-Bye.jpg'
+            onMup.style.visibility = 'visible'
+        
+        }
+        
+    
+
+    </script>
+    <div >
+        <img id="container2" src="" alt="">
+    </div>
+
+</body>
+</html>

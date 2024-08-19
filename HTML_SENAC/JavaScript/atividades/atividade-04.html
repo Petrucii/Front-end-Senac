@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 04</title>
+</head>
+<body>
+
+    <script>
+        let nome = prompt('Digite seu Nome');
+        let notaport = parseFloat(prompt('Nota de Português'));
+        let notamat = parseFloat(prompt('Nota de Matemática'));
+        let notacie = parseFloat(prompt('Nota de Ciências'));
+        let media = ((notaport + notamat + notacie) /3);
+
+        document.write('<b>Aluno:</b> ' + nome + '<br>');
+        document.write('<b>Português:</b> ' + notaport + '<br>');
+        document.write('<b>Matemática:</b> ' + notamat + '<br>');
+        document.write('<b>Ciência:</b> ' + notacie + '<br>');
+        document.write('<b>Média:</b> ' + media + '<br>');
+
+
+    </script>
+    
+</body>
+</html>

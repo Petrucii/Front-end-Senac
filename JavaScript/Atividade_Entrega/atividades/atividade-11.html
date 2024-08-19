@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Quiz</title>
+    <style>
+        body{
+            background-color: #272822;
+            color: #e6cd4a;
+        }
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            color: #f92672;
+        }
+
+        .pergunta {
+            font-weight: bolder;
+            color: #52d9e2;
+            font-size: 22px;
+        }
+
+        .pontos {
+            font-weight: bolder;
+            color: #8ae22e;
+            font-size: 22px;
+        }
+        hr {
+            border-color: #7f76ff;
+        }
+        .numeroCorreto {
+            color: #8ae22e;
+        }
+
+        .numeroResposta {
+            color: #f92672;
+        }
+
+        .numPontos {
+            color: #52d9e2;
+            font-size: 22px;
+            font-weight: bolder;
+        }
+
+    </style>
+</head>
+<body>
+    <script>
+        alert('Seja Bem-Vindo!\n' + 'Responda as perguntas com o número de 1 a 4!');
+
+        let resposta1 = prompt('Pergunta 01:\n\nQual é o site mais usado para gerenciar projetos de programação?\n\n1) Bitbucket\n2) GitHub\n3) GitLab\n4) Radicle');
+
+        let resposta2 = prompt('Pergunta 02:\n\nQual alternativa tem um erro de digitação?\n\n1) let salario = parseFloat(prompt("Salário:"));\n2) document.write("<b>Novo salário: </b>" + novoSalario + "<br>");\n3) let funcionario = pronpt("Nome do funcionário:");\n4) document.write("<b>Salário: </b>" + salario + "<br>");');
+
+        let resposta3 = prompt('Pergunta 03:\n\nQual linguagem é ultilizada para estilizar o HTML?\n\n1) JavaScript\n2) Python\n3) CSS\n4) PDF');
+
+        let resposta4 = prompt('Pergunta 04:\n\nQue cor é as tranças do rei careca?\n\n1) Grisalho \n2) Cor de Mel\n3) Roxo\n4) undefined');
+
+        let resposta5 = prompt('Pergunta 05:\n\nQual é a função ultilizada para escrever na página?\n\n1) document.write\n2) html.write\n3) body.text\n4) console.log');
+
+        document.write('<h1>Resultados:</h1> <br><br> <span class = "pergunta">Pergunta 1:</span> <br><br> Qual é o site mais usado para gerenciar projetos de programação? <br>');
+        document.write('Alternativa correta: <span class = "numeroCorreto">2</span> <br>');
+        document.write('Sua resposta: <span class = numeroResposta>' + resposta1 + '</span><br><hr>');
+
+        document.write('<span class = "pergunta">Pergunta 2:</span> <br><br> Qual alternativa tem um erro de digitação? <br>');
+        document.write('Alternativa correta: <span class = "numeroCorreto">3</span> <br>');
+        document.write('Sua resposta: <span class = numeroResposta>' + resposta2 + '</span><br><hr>');
+
+        document.write('<span class = "pergunta">Pergunta 3:</span> <br><br> Qual linguagem é ultilizada para estilizar o HTML? <br>');
+        document.write('Alternativa correta: <span class = "numeroCorreto">3</span> <br>');
+        document.write('Sua resposta: <span class = numeroResposta>' + resposta3 + '</span><br><hr>');
+
+        document.write('<span class = "pergunta">Pergunta 4:</span> <br><br> Que cor é as tranças do rei careca? <br>');
+        document.write('Alternativa correta: <span class = "numeroCorreto">4</span> <br>');
+        document.write('Sua resposta: <span class = numeroResposta>' + resposta4 + '</span><br><hr>');
+
+        document.write('<span class = "pergunta">Pergunta 5:</span> <br><br> Qual é a função ultilizada para escrever na página? <br>');
+        document.write('Alternativa correta: <span class = "numeroCorreto">1</span> <br>');
+        document.write('Sua resposta: <span class = numeroResposta>' + resposta5 + '</span><br><hr>');
+
+        let pontos = 0
+
+        if (resposta1 === '2'){
+            pontos++;
+        }
+        if (resposta2 === '3'){
+            pontos++;
+        }
+        if (resposta3 === '3'){
+            pontos++;
+        }
+        if (resposta4 === '4'){
+            pontos++;
+        }
+        if (resposta5 === '1'){
+            pontos++;
+        }
+
+        document.write('<span class = "pontos">Pontos:</span> <span class = "numPontos">' + pontos + '/5</span>');
+
+        if (pontos === 0 ) {
+            document.write('<br><br>Parece que você errou todas as respostas :( ' + ' <br><img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsRkowI6eAe1wW8-MjqEz-LJT5e5HF2h6Y5g&s" >');
+        }
+
+    </script>
+</body>
+</html>

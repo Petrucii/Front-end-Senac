@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 09</title>
+</head>
+<body>
+    <script>
+        let idade = parseFloat(prompt('Digite sua idade'));
+
+        document.write('<b>Classificação Etária</b>' + '<br>');
+
+        if (idade < 12 ) {
+            document.write('Idade: ' + idade);
+            document.write('Classificação ' + 'Criança');
+        }
+        else if (idade >12 && idade <18) {
+            document.write('Idade: ' + idade);
+            document.write('Classificação: ' + 'Adolecente');
+        }
+        else {
+            document.write('Idade: ' + idade + '<br>');
+            document.write('Classificação: ' + 'Adulto');
+        }
+    </script>
+</body>
+</html>

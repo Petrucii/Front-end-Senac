@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 20</title>
+</head>
+<body>
+    <script>
+        let data = new Date();
+        console.log(data);
+        let dia = data.getDate();
+        let mes = data.getMonth();
+        let ano = data.getFullYear();
+
+        
+        if (dia < 10){dia = '0' + dia};
+        if (mes < 10){mes = '0' + mes};
+
+        let dataCompleta = dia + '/' + mes + '/' + ano;
+
+        console.log(dataCompleta);
+        document.write(dataCompleta);
+
+        
+    </script>
+</body>
+</html>

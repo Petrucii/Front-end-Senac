@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 06</title>
+</head>
+<body>
+    <script>
+        //Exemplo-06:
+        //Crie um programa que solicite um numero entre 1 a 7 e imprima no console qual dia da semana corresponde o numero
+
+        let number = parseFloat(prompt('Digite um número de 1 a 7'));
+
+        if (isNaN(number) || number < 1 || number > 7) {
+            console.log('Você é burro e não sabe ler :)');
+        }
+
+        if (number === 1) {
+            console.log('Segunda-Feira')
+        }
+         else if (number === 2) {
+        console.log('Terça-Feira');
+        }
+        else if (number === 3) {
+        console.log('Quarta-Feira');
+        }
+        else if (number === 4) {
+            console.log('Quinta-Feira');
+        }
+        else if (number === 5) {
+            console.log('Sexta-Feira');
+        }
+        else if (number === 6) {
+            console.log('Sábado');
+        }
+        else if (number === 7) {
+            console.log('Domingo');
+        }
+    </script>
+</body>
+</html>

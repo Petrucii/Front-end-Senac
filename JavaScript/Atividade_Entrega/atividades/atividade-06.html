@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 06</title>
+    <style>
+        #container {
+            border: solid black 3px;
+        }
+
+        .primeira {
+            background-color: #62a6e6;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- <table id="container">
+        <tr class="primeira">
+            <td colspan="2"><b>Par ou Ímpar</b></td>
+        </tr>
+        <tr>
+            <td>Número digitado:</td>
+            <td></td>
+    </tr>
+        <tr>
+            <td>Definição</td>
+            <td>Par</td>
+        </tr>
+    </table> -->
+
+    <script>
+        let numero = parseFloat(prompt('Digite um numero'));
+        let mod = numero %2;
+        let definicao = '';
+        
+        if (mod == 0){
+            definicao = 'Par';
+        }
+        else {
+            definicao = 'Ímpar';
+
+            document.write('<table id="container"><tr><td colspan="2"><b>Par ou Ímpar</b></td></tr><tr><td>Número digitado:</td><td>' + numero + '</td><tr><tr><td>Definição</td><td>' + definicao + '</td></tr></table>')
+        }
+       
+    </script>
+</body>
+</html>

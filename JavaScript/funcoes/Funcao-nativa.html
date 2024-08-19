@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função Nativa</title>
+</head>
+
+<body>
+    <script>
+        /*
+
+Funções nativas em JavaScript
+
+Uma função nativa em JavaScript é uma função incorporada que já está disponível na linguagem JavaScript sem a necessidade de criar ou importar qualquer biblioteca adicional.
+ 
+Essas funções são parte do núcleo da linguagem e podem ser usadas diretamente em seu código sem a necessidade de defini-las previamente.
+
+*/
+
+        let texto2 = '         Aula javascript      ';
+        let texto = 'Aula javascript';
+        // |A|u|l|a| |j|a|v|a|s|c |r |i |p |t |
+        // |0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|  
+
+        console.log(texto.length); // Mostra o cumprimento do texto, ou de alguma variável selecionada.
+
+        console.log(texto.charAt(5)); // Retorna o caractére indicado pelo número.
+
+        console.log(texto.indexOf('r')); // Retorna em qual posição se encontra o caractere selecionado.
+
+        console.log(texto.replace('javascript', 'culinaria')); // Fára uma substitução com o texto selecionado, somente nesta linha e se for encontrado.
+
+        console.log(texto.substring(11, 14)); //  Retorna o inicial onde o texto começará e pulará quantas posições for determinada pelo número seguinte.
+
+        console.log(texto.toUpperCase()); // Converter para maiúsculo somente caractere.
+
+        console.log(texto.toLowerCase()); // Converter para minúsculo somente caractere.
+
+        console.log(texto2.trim()); //  Remove os espaços da string(texto)
+
+        let numero = 10.35978;
+        console.log(numero);
+        console.log(Math.ceil(numero)); // Arredonda o numéro para cima.
+        console.log(Math.floor(numero)); //Arredonda o número para baixo.
+
+        console.log(Math.round(10.5)); // Arredonda pra cima segundo a regra de aritimética.
+        console.log(Math.round(10.4)); // Arredonda pra cima segundo a regra de aritimética.
+
+        // ------------------------------------
+
+        let numeroAleatorio = Math.random();
+        console.log(numeroAleatorio);
+        console.log(Math.round(numeroAleatorio)) //  Gerou o numero alatório e depois arredonda.
+
+        // -----------------------------------
+        let data = new Date();
+        console.log(data);
+
+        console.log('Dia do mês: ' + data.getDate()); // Puxa o dia do mes.
+
+        console.log('Dia da semana: ' + data.getDay()); // Puxa o dia da semana.
+
+        console.log('Mês: ' + data.getMonth()); // Puxa o mês que estamos.
+
+        console.log('Mês: ' + (data.getMonth() +1)); // Puxa o mês que estamos + (o valor escolhido).
+
+        console.log('Ano: ' + data.getFullYear()); // Puxa o ano que estamos.
+        // ----------------------------------
+
+
+        let numeroAleatorio2 = Math.random() * 10;
+            numeroAleatorio2 = Math.round(numeroAleatorio2);
+            console.log('Aleatorio entre 0 e 10: ' + numeroAleatorio2); 
+
+
+    </script>
+</body>
+
+</html>

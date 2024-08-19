@@ -1,0 +1,19 @@
+/* Estilo para a tag body */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte utilizada no corpo da página*/
+    margin: 0px; /* Remove as margens padrão do navegador*/
+    padding: 20px;/* Adiciona um preenchimento ao redor do conteúdo da página*/
+    background-color: #f0f0f0; /* Define a cor de fundo da página*/
+}
+/* Estilo para o ID #titulo-principal */
+#titulo-principal {
+    color: blue; /* Define a cor do texto do título*/
+    font-size: 24px; /* Define o tamanho da fonte do título*/
+    text-align: center; /* centraliza o texto do titulo*/
+}
+/*  Estilo para a classe .destaque */
+.destaque {
+    background-color: yellow; /*Define a cor do fundo para o parágrafo dsetacado*/
+    padding: 10px;/*Adiciona um preenchimento ao redor do texto do parágrafo*/
+    border: 1px solid black;/*Adiciona uma borda preta ao redor do parágrafo*/
+}

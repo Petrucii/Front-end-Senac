@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 28</title>
+</head>
+
+<body>
+
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            background-color: rgb(240, 240, 240);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        h1 {
+            padding-top: 15px;
+        }
+
+        #formulario {
+            text-align: center;
+            font-size: 25px;
+            font-weight: bolder;
+            margin-right: 60px;
+
+        }
+
+        .inf {
+            text-align: left;
+            width: 177px;
+            margin-top: 10px;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        #containerzao {
+            margin-top: 200px;
+        }
+
+        #container {
+            text-align: center;
+            margin: 0 auto;
+            width: 280px;
+            height: auto;
+            margin-top: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 8px 2px rgb(201, 200, 200);
+        }
+
+        img {
+            width: 200px;
+        }
+
+        input {
+            width: 250px;
+            height: 20px;
+        }
+
+        #botao {
+            margin-top: 13px;
+            background-color: #099e09;
+            border-radius: 4px;
+            width: 260px;
+            height: 30px;
+            color: white;
+            font-weight: bolder;
+        }
+
+        label {
+            width: auto;
+            line-height: 40px;
+        }
+
+        .salvar {
+           margin-top: 10px;
+            width: 15px;
+            margin-left: 10px;
+        }
+        .flex {
+            display: flex;
+        
+        }
+    </style>
+
+    <div id="conteinerzao">
+        <div id="formulario"> Formulário de Login </div>
+        <div id="container">
+
+            <div id="foto">
+                <img src="img/perfil.jpg" alt="">
+            </div>
+            <form action="">
+                <div id="usuario">
+                    <div class="inf">Usuário:</div>
+                    <input type="text">
+                </div>
+                <div id="senha">
+                    <div class="inf"> Senha:</div>
+                    <input type="text">
+                </div>
+
+                <Button id="botao"> Login </Button>
+                
+                    <div class="flex">
+                        <input class="salvar" type="checkbox" name="salvar">
+                        <label for="salvar">Salvar dados</label>
+                    </div>
+                   
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

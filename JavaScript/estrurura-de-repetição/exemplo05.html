@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 05</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+     
+        #box {
+            background-color: #506266;
+            width: 100px;
+            height: 40px;
+            border: 3px solid #7b8f8a;
+            line-height: 40px;
+            text-align: center;
+            font-size: 20px;
+            margin-left: 100px;
+            font-weight: bold;
+            color: #fff;
+        }
+    </style>
+    <script>
+
+let numDigitado = parseInt(prompt('Digite um numero:'));
+ 
+ for (let num = numDigitado; num <= 50; num++) {
+     document.write('<div id=box> <marquee behavior=alternate> ' + num + '</marquee></div>');
+ }
+</script>
+
+    </script>
+</body>
+</html>
