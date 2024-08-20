@@ -1,11 +1,20 @@
 
+html {
+    /* Adicionei a imagem no html ao inves do bodi */
+    background-image: url('../HTML/img/fundo.png');
+}
+
 body {
     text-align: center;
+    margin: 0 auto;
     display: block;
     border: solid black;
     border-radius: 20px;
     width: 900px;
-
+    height: 3500px;
+    box-shadow: 0 0 6px 5px rgb(110, 110, 110);
+    background-color: #e6e2e2;
+    
 
 } 
 #titulo {
@@ -16,7 +25,6 @@ body {
     width: 700px;
     text-align: left;
     margin: 0 auto;
-  
     
 }
 
